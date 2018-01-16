@@ -63,15 +63,21 @@ attrib %usbdr%:\Recycled +r +s +h
 
 if exist %usbdr%:\Autorun.inf del /f /q /a %usbdr%:\Autorun.inf
 mkdir \\.\\%usbdr%:\Autorun.inf\nul.Hiren'sBootCD
-attrib %usbdr%:\Autorun.inf +s +h
-echo Folder %usbdr%:\AUTORUN.INF and File RECYCLER created
+attrib %usbdr%:\Autorun.inf +r +s +h
+
+if exist %usbdr%:\Autorun.ini del /f /q /a %usbdr%:\Autorun.ini
+mkdir \\.\\%usbdr%:\Autorun.ini\nul.Hiren'sBootCD
+attrib %usbdr%:\Autorun.ini +r +s +h
+
+echo Folder %usbdr%:\AUTORUN.INF and %usbdr%:\AUTORUN.INI and File RECYCLER created
 goto x
 :r
 rmdir /s /q \\.\\%usbdr%:\Autorun.inf
+rmdir /s /q \\.\\%usbdr%:\Autorun.ini
 del /f /q /a %usbdr%:\Recycled
 del /f /q /a %usbdr%:\Recycler
 del /f /q /a %usbdr%:\$Recycle.Bin
-echo Folder %usbdr%:\AUTORUN.INF and RECYCLER Files removed
+echo Folder %usbdr%:\AUTORUN.INF and %usbdr%:\AUTORUN.INI and RECYCLER Files removed
 :x
 set usbdr=
 echo.

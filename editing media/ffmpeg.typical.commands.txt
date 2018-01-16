@@ -1,0 +1,7 @@
+		MP4
+ffmpeg -i input.mp4 -c:v libxvid -q:v 6 -vf scale=160:-1 -crf 0 output.mp4
+ffmpeg -i input.mp4 -codec copy -q:v 6 -vf scale=160:-1 -crf 0 output.mp4
+		MP3
+ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
+ffmpeg -ss 00:00:00.000-t 30 -i inputfile.mp3 -codec copy outputfile.mp3
+ffmpeg -ss 00:00:00.000 -t 30 -c:a flac -i input.flac output.flac
