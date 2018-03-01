@@ -26,7 +26,7 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 
 CLS
-    :start
+    :begin
 @ECHO off
 ECHO  ---------------------------------------------------
 ECHO			TADT Production
@@ -37,44 +37,57 @@ ECHO  ---------------------------------------------------
 ECHO  			1 Settings
 ECHO  			2 Start
 ECHO  			3 Stop
-ECHO  			4 Exit
+ECHO  			4 Current status
+ECHO  			5 Exit
 ECHO  ---------------------------------------------------
 SET /p option=Please enter one of the options:
 
 if %option%==1  ( goto setup )      else set /a er=1
-if %option%==2  ( goto start1 )     else set /a er=er+1
+if %option%==2  ( goto start )     else set /a er=er+1
 if %option%==3  ( goto stop )       else set /a er=er+1
-if %option%==4  ( exit)
+if %option%==4  ( goto status )       else set /a er=er+1
+if %option%==5  ( exit)
 
 :noOption
-if %er% GEQ 3 ( 
+if %er% GEQ 3 (
 Echo 			Error!
 Echo 		Please enter a correct option
 @pause
-cls  
-goto start
+cls
+goto begin
 )
 
 :setup
 SET /p ssid=Please enter the Hotspot name:
 SET /p key=Please enter the Hotspot password greater the 8 digits:
-netsh wlan set hostednetwork mode=allow ssid="%ssid%" key="%key%" 
+netsh wlan set hostednetwork mode=allow ssid="%ssid%" key="%key%"
 if %errorlevel%==0 (
 ECHO Setup complete
 )
 @pause
-cls  
-goto start
+cls
+goto begin
 
-:start1
+:start
 netsh wlan start hostednetwork
 @pause
-cls  
-goto start
+cls
+goto begin
 
 :stop
 netsh wlan stop hostednetwork
 @pause
-cls  
-goto start
+cls
+goto begin
+
+:status
+netsh wlan show hostednetwork | findstr -i status
+echo SSID Name
+netsh wlan show hostednetwork | findstr -i " ssid "
+netsh wlan show hostednetwork setting=security
+echo Connected clients
+arp -a | findstr -i 192.168.173 | findstr /V 255 | findstr /V 192.168.173.1
+@pause
+cls
+goto begin
 goto :eof
