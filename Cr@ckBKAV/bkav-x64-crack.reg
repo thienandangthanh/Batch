@@ -1,0 +1,114 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Bkav]
+
+"szBmailGTTime"="20171210071820"
+"szCleanUpDate"="3/12/2017"
+"szAdLastUpdate"="2000/01/01"
+"szFullCleanUpDate"="9/12/2017"
+"szCardNumber"="3008-9466-6999"
+"szCustomerName"="TAP Developer Team"
+"szCustomerAddress"="HCMUTE, HCMC, Vietnam"
+"szCustomerPhone"="028 3896 8641"
+"szCustomerEmail"="contact@taptele.com"
+"szExpireDate"="19/09/2025"
+
+"dwNameDBCount"=dword:00000003
+"dwStringDBCount"=dword:00000003
+"dwVirusDefCount"=dword:00000004
+"dwPtrnCodeCount"=dword:00000003
+"dwRBDSectionFiles"=dword:00000000
+"dwRBDSectionFPFiles"=dword:00000000
+"dwCloudDbFiles"=dword:00000000
+"dwWLEMZFiles"=dword:00000006
+"dwWLENonMZFiles"=dword:00000002
+"dwCurrentBkuSize"=dword:00000000
+"dwTimeRefresh"=hex:9f,6f,2b,5a
+"dwDMPLastTime"=dword:00000000
+"dwShortcutDT"=dword:00000000
+"dwShortcutAP"=dword:00000000
+"dwShortcutSM"=dword:00000000
+"dwShortcutTB"=dword:00000000
+"dwRestartCount"=dword:000000be
+"dwExpiredOrderTime"=dword:00000014
+"dwAllowExtend"=dword:00000000
+"dwTimeDisableFeatureRT"=dword:59bff2d1
+"dwStatusCheckRT"=dword:00000000
+"dwTimeDisableFeatureFW"=dword:59bcabd0
+"dwStatusCheckFW"=dword:00000000
+"dwDCACounter"=dword:00000003
+"dwProductItemId"=dword:0061b0b8
+"dwVersionVulScanData"=dword:d8a3eab8
+"dwWaitUpdate"=dword:00000001
+"dwLastFixFileList"=dword:5a2b707f
+
+"BkavVersion"="Bkav2016x64"
+"ProductName"="Bkav Pro Internet Security"
+
+"fGiaodien"=dword:00000000
+"fAllowMultipleFilesScan"=dword:00000064
+"fDietKhongCanHoi"=dword:00000000
+"fSaoLuuTruocKhiDiet"=dword:00000001
+"fFileVanBan"=dword:00000000
+"fFileChuongTrinh"=dword:00000000
+"fTatCaCacFile"=dword:00000001
+"fSmartScan"=dword:00000001
+"fRealTimeProtection"=dword:00000001
+"fRegistryProtection"=dword:00000000
+"fUsbProtection"=dword:00000001
+"fSelfDefense"=dword:00000001
+"fLiveConnect"=dword:00000001
+"fProActiveProtection"=dword:00000001
+"fAdvOptionRBD"=dword:00000000
+"fTuDongKiemTraPhienBanMoi"=dword:00000000
+"fTuDongDownload"=dword:00000000
+"fAdvOptionDeepScan"=dword:00000000
+"fEnableSa"=dword:00000001
+"fSaDisableIE"=dword:00000000
+"fSaDisableFF"=dword:00000000
+"fSaDisableChr"=dword:00000000
+"fSaDisableCC"=dword:00000000
+"fBkavPluginDisableChr"=dword:00000000
+"fSuDungProxy"=dword:00000000
+"fUseDefInternetSettings"=dword:00000000
+"fSFDisableChr"=dword:00000000
+"fCloudScanMode"=dword:00000001
+"fEnableAlManager"=dword:00000001
+"fTbvStatus"=dword:00000001
+"fEnableAL"=dword:00000001
+"fAbbMode"=dword:00000000
+"fAdvOptionDeepScanBak"=dword:00000000
+"fFirewallEnable"=dword:00000001
+"fEnableFwDrv"=dword:00000001
+"fDisableTempMode"=dword:00000001
+"fGiaoDienVulScan"=dword:00000000
+"fFirewallSafeMode"=dword:00000001
+"fGameMode"=dword:00000000
+
+"nTimeLiveUpdate"=dword:00000005
+"OSPlatform"="X64"
+"LTCompressApplog"=hex:80,01,2b,0f,a5,6f,d3,01
+"ECO Scan"="3 2017 11 15"
+"ProtectedPaths"="C:\\Program Files (x86)\\BkavPro,C:\\Program Files (x86)\\BluPro,C:\\Windows\\SysWOW64\\BkavService.exe,C:\\Windows\\SysWOW64\\BluProService.exe,C:\\Program Files (x86)\\BkavPro\\System\\BkavSystemService.exe,"
+"FirewallWhiteList"="C:\\Program Files (x86)\\BkavPro,C:\\Program Files (x86)\\BluPro,C:\\Windows\\SysWOW64\\BkavService.exe,C:\\Windows\\SysWOW64\\BluProService.exe,C:\\Program Files (x86)\\BkavPro\\System\\BkavSystemService.exe,"
+"DefinitionVersion"=dword:000015bd
+"LastReplaceSL"=hex:90,dd,f8,58,e6,70,d3,01
+"LastTimeSendAppLogReport"="2017-12-10T06:01:42"
+"LastTimeSendAppDataReport"="2017-10-26T20:10:16"
+"ECO Auto"=hex:10,d8,17,e3,ab,6e,d3,01
+"AntiAdwareTimeOut"=dword:0036ee80
+"LastSignHash"=hex:a2,3c,10,c9,32,45,72,5b,ae,b7,1b,0b,5f,f6,fe,d4,47,65,73,1c,\
+  20,30,65,7a,37,50,f4,ee,af,c6,69,a4
+"AntiAdwareScanTimeStamp"="10-12-2017"
+"AntiAdwareNumberScaned"=dword:00000000
+"C:\\Windows\\"=dword:00010400
+"C:\\Users\\Administrator\\"=dword:0000b9c9
+"SecNotLastID"=dword:000004e2
+"LastFixBuildNumber"="1712091048"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Bkav\SafePayment]
+"InstallSP"="C:\\Program Files (x86)\\BkavPro\\Tools"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Bkav\SafeRun]
+

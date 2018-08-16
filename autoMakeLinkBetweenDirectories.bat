@@ -88,4 +88,11 @@ if exist "C:\Users\TADT\AppData\Roaming\Qt"  ( del "C:\Users\TADT\AppData\Roamin
 mklink /j "C:\Users\TADT\AppData\Roaming\Qt" "H:\AppData\Roaming\Qt\"
 if exist "C:\Users\TADT\AppData\Roaming\QtProject"  ( del "C:\Users\TADT\AppData\Roaming\QtProject" )
 mklink /j "C:\Users\TADT\AppData\Roaming\QtProject" "H:\AppData\Roaming\QtProject\"
+
+echo.
+echo add ZaloPC
+if exist "C:\Users\TADT\AppData\Local\ZaloPC"  ( del "C:\Users\TADT\AppData\Local\ZaloPC" )
+mklink /j "C:\Users\TADT\AppData\Local\ZaloPC" "H:\AppData\Local\ZaloPC"
+if exist "C:\Users\TADT\AppData\Roaming\Zalo"  ( del "C:\Users\TADT\AppData\Roaming\Zalo" )
+mklink /j "C:\Users\TADT\AppData\Roaming\Zalo" "H:\AppData\Roaming\Zalo"
 pause
